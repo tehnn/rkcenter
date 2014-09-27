@@ -11,10 +11,13 @@
     //print_r($data);
 
     $this->widget('booster.widgets.TbHighCharts', array(
-        //'htmlOptions' => array('style' => 'width: 450px;'),
+        'htmlOptions' => array('style' => 'width: 80%'),
         'options' => array(
             'chart' => array(
                 'type' => 'pie',
+            ),
+            'credit' => array(
+                'enable' => false
             ),
             'title' => array(
                 'text' => 'ผู้มีสิทธิ์หลักประกันสุขภาพ ',
@@ -31,20 +34,17 @@
                     'cursor' => 'pointer',
                     'dataLabels' => array(
                         'enabled' => true, //true,false                      
-                        'format'=>'{point.name} {point.percentage:.1f} %',
+                        'format' => '{point.name} {point.percentage:.1f} %',
                     ),
-                    'showInLegend'=>True
+                    'showInLegend' => True
                 )
             ),
             'series' => array(array(
                     'name' => 'จำนวน',
                     'data' => $piedata
                 )),
-            'htmlOptions' => array(
-                'style' => 'width: 450px; min-width: 310px; height: 400px; margin: 0 auto'
-            )
-)))
-    ;
+        )//end options
+    ));//end widgets
     ?>
 </div>
 <div class="well-sm" style="float: left; width: 350px;">
