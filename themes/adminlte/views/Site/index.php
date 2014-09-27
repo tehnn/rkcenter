@@ -32,7 +32,8 @@
                     'dataLabels' => array(
                         'enabled' => true, //true,false                      
                         'format'=>'{point.name}: {point.percentage:.1f} %',
-                    )
+                    ),
+                    'showInLegend'=>True
                 )
             ),
             'series' => array(array(
