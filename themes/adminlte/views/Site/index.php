@@ -23,7 +23,7 @@
             //'text' => 'อำเภอร้องกวาง ปีงบประมาณ 2557',
             //),
             'tooltip' => array(
-                'pointFormat' => '= {point.percentage:.1f}%'
+                'pointFormat' => 'จำนวน {point.y}คน คิดเป็น {point.percentage:.1f} %'
             ),
             'plotOptions' => array(
                 'pie' => array(
@@ -31,7 +31,7 @@
                     'cursor' => 'pointer',
                     'dataLabels' => array(
                         'enabled' => true, //true,false                      
-                        'format'=>'{point.name}: {point.percentage:.1f} %',
+                        'format'=>'{point.name} {point.percentage:.1f} %',
                     ),
                     'showInLegend'=>True
                 )
