@@ -1,0 +1,4 @@
+hdc-report.psc 
+เป็นไฟล์ backup ของ navicat
+
+สร้างฐานใหม่ชื่อ hdc-report แล้วทำการ restore
