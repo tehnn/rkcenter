@@ -16,9 +16,7 @@
             'chart' => array(
                 'type' => 'pie',
             ),
-            'credit' => array(
-                'enable' => false
-            ),
+          
             'title' => array(
                 'text' => 'ผู้มีสิทธิ์หลักประกันสุขภาพ ',
             ),
